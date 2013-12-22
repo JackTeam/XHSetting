@@ -1,0 +1,40 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+// TableView section key
+#define XHKSectionsKey @"Sections"
+#define XHKSectionHeaderTitleKey @"SectionHeaderTitle"
+#define XHKSectionFooterTitleKey @"SectionFooterTitle"
+
+// TableView row key
+#define XHKRowsKey @"Rows"
+#define XHKSwitchKey @"Switch"
+#define XHKTextKey @"Text"
+#define XHKSubTitleKey @"SubTitle"
+#define XHKUserAvatarImageNameKey @"userAvatarImageName"
+#define XHKAccessoryViewTextKey @"AccessoryViewText"
+
+
+#define XHKLoginButtonDisplayKey @"LoginButton"
+
+// Controller key
+#define XHKControllerTitleKey @"Title"
+
+// NavigationController push ViewController Key
+#define XHKWifiKey @"Wi-Fi"
+#define XHKNotificationsKey @"Notifications"
+
+#endif
