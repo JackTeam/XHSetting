@@ -15,12 +15,23 @@ English: like weChat、 QQ、 instagram、NetEase new、changba、sina weibo、T
 ![image](https://github.com/JackTeam/XHSetting/raw/master/Screenshots/Twitter.png)
 
 
+## 例子
+## Example
+```objective-c
+
+1、继承XHSetting
+2、在ViewDidloadl利用如下方法：
+添加一个section
+- (void)addSection:(XHTableViewControllerAddSectionBlock)b;
+- 
+在某个section里面添加一个cell
+- (void) addCell:(XHTableViewCellBlock)configurationBlock whenSelected:(XHTableViewCellWhenSelectedBlock)whenSelectedBlock;
+
+```
+
 ## Thanks
 
-Thanks you @jakemarsh
-
-
-
+[jakemarsh](https://github.com/jakemarsh)
 
 
 ## License
